@@ -1,23 +1,32 @@
 import logo from './logo.svg';
-import './App.css';
+import "primereact/resources/themes/lara-light-cyan/theme.css";
+import './styles/App.css';
+import './styles/Typography.css';
+import 'primeflex/primeflex.css';
+import IconBtn from './components/iconBtn';
+import Btn from './components/btn';
+import { Button } from 'primereact/button';
+import NavBtn from './components/navBtn';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="landing-bg">
+      {/* <header className="landing-bg h-full">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Button className="icon-btn">Hello</Button>
+        <div className='project-card'>
+          <div className='h-4rem'>Test</div>
+          <div className='tag txt-tag'>Tag</div>
+          <div className='project-content'>Test</div>
+        </div>
+      </header> */}
+
+      <div className='App-header'>
+        <IconBtn></IconBtn>
+        <Btn></Btn>
+        <NavBtn></NavBtn>
+      </div>
+
     </div>
   );
 }
