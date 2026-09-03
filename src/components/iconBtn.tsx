@@ -1,11 +1,13 @@
 import "./iconBtn.css";
 
-function IconBtn() {
+function IconBtn({ children }: BtnIcon) {
     return (
         <div className="btn">
             <div className="outer"></div>
             <div className="inner"></div>
-            <div className="icon">test</div>
+            <div className="icon">
+                {children}
+            </div>
         </div>
     )
 }

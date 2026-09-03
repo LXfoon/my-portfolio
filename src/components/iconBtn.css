@@ -42,7 +42,7 @@
 }
 
 .btn:hover {
-    fill: rgba(255, 205, 221, 0.98);
+    background: rgba(255, 205, 221, 0.98);
     stroke-width: 1px;
     stroke: #FFF;
     box-shadow: -2px 11px 10.9px 0 rgba(255, 255, 255, 0.49) inset, 0 -16px 9.8px 0 rgba(255, 255, 255, 0.25) inset;

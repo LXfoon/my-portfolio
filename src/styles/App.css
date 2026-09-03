@@ -98,6 +98,10 @@ body{
   background: rgba(255, 255, 255, 0.72);
 }
 
+.display-gold {
+  color: var(--primary-gold);
+}
+
 .h2-pink {
   color: #E84F6D;
 }
