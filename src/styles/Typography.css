@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+SC:wght@300;400;500;600;700&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
 @import 'primeflex/primeflex.css';
 
+a {
+    text-decoration: none;
+}
+
 .txt-display {
     font-family: Cormorant;
     font-size: 90px;
@@ -18,26 +22,35 @@
     line-height: normal;
 }
 
-.txt-h1 {
+.txt-menu:hover {
+    color: #b5852a;
+}
+
+h1 {
+    margin: 4px 0;
     color: #F4617D;
     font-family: "Cormorant SC";
-    font-size: 64px;
+    font-size: 42px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
 
-.txt-h2 {
+h2 {
+    padding: 0;
+    margin: 0;
     font-family: "Cormorant SC";
-    font-size: 32px;
+    font-size: 26px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
 }
 
-.txt-body {
+p {
+    padding: 0;
+    margin: 0;
     font-family: Amiri;
-    font-size: 24px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -46,7 +59,7 @@
 .txt-tag {
     color: #BE6677;
     font-family: Amiri;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
