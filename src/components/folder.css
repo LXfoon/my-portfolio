@@ -1,0 +1,96 @@
+.folder {
+  display: inline-flex;
+  width: 30vw;
+  min-height: 35vh;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.folder-bg {
+  width: 30vw;
+  height: 330px;
+  top: -0.5px;
+  fill: #FEECF0;
+  stroke-width: 1px;
+  stroke: #C3B498;
+}
+
+.folder-svg {
+    width: 30vw;
+    height: auto;
+}
+
+.folder-outer {
+  display: flex;
+  width: 30vw;
+  height: 32vh;
+  padding: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: 1px solid #C3B498;
+  background: rgba(255, 255, 255, 0.10);
+  box-shadow: -10px 15px 25.8px 0 rgba(255, 255, 255, 0.39) inset, 0 -6px 32.8px 0 rgba(184, 122, 139, 0.15);
+  backdrop-filter: blur(7.300000190734863px);
+}
+
+.folder-content {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 12px;
+}
+
+.header-sec {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+    flex: 1 0 0;
+}
+
+.tag-list {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.body {
+    flex: 1 0 0;
+    align-self: stretch;
+    max-height: 40%;
+    overflow: hidden;
+}
+
+.folder:hover {
+    filter: drop-shadow(0 0 22.5px rgba(195, 180, 152, 0.68));
+}
+
+.folder:hover h2 {
+    color: #AB3149;
+}
+
+.folder:hover .body {
+    color: #793B47;
+    overflow: auto;
+}
+
+.folder:hover .icon {
+    color: #AB3149;
+}

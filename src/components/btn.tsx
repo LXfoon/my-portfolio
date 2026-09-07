@@ -1,13 +1,13 @@
 import "./btn.css";
 
-function Btn() {
+function Btn({ icon, text }: MainBtn) {
     return (
         <div className="mainBtn">
             <div className="mainOuter"></div>
             <div className="mainInner"></div>
             <div className="mainContent">
-                <i className="mainIcon">:3</i>
-                <p>test</p>
+                <i className="mainIcon">{icon && icon}</i>
+                <p>{text && text}</p>
             </div>
         </div>
     )

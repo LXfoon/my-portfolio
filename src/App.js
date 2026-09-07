@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 import './styles/App.css';
 import './styles/Typography.css';
@@ -8,10 +7,10 @@ import myPic from './images/NEW_candid_pic.jpeg';
 import moonImg from './images/moon.svg';
 import flowerImg from './images/flower.svg';
 import kirby from './images/kirby.svg';
-import { FileTextIcon, EnvelopeIcon, ChatDotsIcon } from '@phosphor-icons/react';
+import { FileTextIcon, EnvelopeIcon, ChatDotsIcon, GithubLogoIcon } from '@phosphor-icons/react';
 import IconBtn from './components/iconBtn';
+import Folder from './components/folder';
 import Btn from './components/btn';
-import { Button } from 'primereact/button';
 
 function App() {
   return (
@@ -163,8 +162,62 @@ function App() {
       </div>
 
       {/* projects pg */}
-      <div className='h-screen pt-8' id='projects'>
-        testes
+      <div className='h-screen pt-8 pb-8 px-4' id='projects'>
+        <div className='h-full'>
+          <div className='w-full flex py-2 gap-4'>
+            <span className="w-full flex align-items-center"><h1>Projects</h1></span>
+            <a href="#" title="See more on Github!">
+              <Btn icon={ <GithubLogoIcon size={20} weight="fill" /> } text="LXFoon"></Btn>
+            </a>
+          </div>
+
+          <div className="folder-list">
+            <a href="#">
+              <Folder
+                heading= "test"
+                tagList = {
+                  <div className="tag txt-tag">Java</div>
+                }
+                summary= "Lorem ipsum bla bla Lorem ipsum bla bla"
+              ></Folder>
+            </a>
+
+            <Folder
+              heading= "Hello"
+              tagList = {
+                <>
+                  <div className="tag txt-tag">Java</div>
+                  <div className="tag txt-tag">Java</div>
+                </>
+              }
+            ></Folder>
+            <Folder></Folder>
+          </div>
+
+          <div className="folder-list">
+            <a href="#">
+              <Folder
+                heading= "test"
+                tagList = {
+                  <div className="tag txt-tag">Java</div>
+                }
+                summary= "Lorem ipsum bla bla Lorem ipsum bla bla"
+              ></Folder>
+            </a>
+
+            <Folder
+              heading= "Hello"
+              tagList = {
+                <>
+                  <div className="tag txt-tag">Java</div>
+                  <div className="tag txt-tag">Java</div>
+                </>
+              }
+            ></Folder>
+            <Folder></Folder>
+          </div>
+          
+        </div>
       </div>
     </div>
   );
