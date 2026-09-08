@@ -74,8 +74,14 @@
 .body {
     flex: 1 0 0;
     align-self: stretch;
+    min-height: 30%;
     max-height: 40%;
     overflow: hidden;
+    color: #BE6677;
+}
+
+a h2 {
+    color: #E84F6D;
 }
 
 .folder:hover {
@@ -89,6 +95,10 @@
 .folder:hover .body {
     color: #793B47;
     overflow: auto;
+}
+
+.folder:hover #feature {
+    color: #AB3149;
 }
 
 .folder:hover .icon {

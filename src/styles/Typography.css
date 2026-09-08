@@ -13,7 +13,7 @@ a {
     line-height: normal;
 }
 
-.txt-menu {
+.txt-menu, .txt-menu:visited {
     color: #EAAD3B;
     font-family: "Cormorant SC";
     font-size: 36px;

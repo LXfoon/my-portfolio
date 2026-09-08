@@ -59,6 +59,28 @@ body{
   backdrop-filter: blur(10.899999618530273px);
 }
 
+ul {
+  padding-left: 1rem;
+  padding-top: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: "✶ ";
+}
+
+.transcript {
+  color:#EAAD3B;
+}
+
+.transcript:hover {
+  text-decoration: underline;
+}
+
+.transcript:visited {
+  color: #EAAD3B;
+}
+
 .skill-1 {
   display: flex;
   padding: 16px;
@@ -95,34 +117,6 @@ body{
   background: radial-gradient(178.88% 132.42% at 86.15% 142.65%, rgba(255, 178, 196, 0.45) 0%, #FFF 100%);
   backdrop-filter: blur(18.899999618530273px);
 }
-
-/* .project-card {
-  display: flex;
-  padding-top: 10px;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 10px;
-  flex: 1 0 0;
-  align-self: stretch;
-  border-radius: 16px;
-  border: 1px solid #C3B498;
-  background: #F4DFE4;
-}
-
-.project-content {
-  display: flex;
-  height: 260px;
-  padding: 16px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
-  align-self: stretch;
-  border-top: 1px solid #C3B498;
-  background: linear-gradient(280deg, rgba(255, 212, 226, 0.79) 0%, rgba(255, 255, 255, 0.79) 99.36%);
-  box-shadow: -10px 15px 25.8px 0 rgba(255, 255, 255, 0.25) inset, 0 -6px 32.8px 0 rgba(184, 122, 139, 0.15);
-  backdrop-filter: blur(27.649999618530273px);
-} */
 
 .folder-list {
   display: flex;

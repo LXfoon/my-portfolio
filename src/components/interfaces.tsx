@@ -11,4 +11,5 @@ interface ProjFolder {
     heading?: string;
     tagList?: React.ReactNode;
     summary?: string;
+    feature?: string;
 }

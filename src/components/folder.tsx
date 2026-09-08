@@ -1,7 +1,7 @@
 import { CaretRightIcon } from '@phosphor-icons/react';
 import './folder.css';
 
-function Folder({ heading, tagList, summary}: ProjFolder) {
+function Folder({ heading, tagList, summary, feature }: ProjFolder) {
     return (
        <div className="folder relative z-1">
             <svg className='absolute folder-svg' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 599 330" fill="none">
@@ -20,6 +20,9 @@ function Folder({ heading, tagList, summary}: ProjFolder) {
                     </div>
                     <div className='body'>
                         {summary && summary}
+                    </div>
+                    <div className='p-pink' id='feature'>
+                        {feature && feature}
                     </div>
                 </div>
             </div>
